@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAO VIỆT | Restaurace s asijskou a vietnamskou kuchyní</title>
+    <meta name="description" content="Autentická asijská a vietnamská restaurace v Novém Městě na Moravě. Nabízíme čerstvé sushi, poke bowls, vietnamské speciality a bento sety.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-text">SAO VIỆT</span>
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Otevřít menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">O Nás</a>
+                <a href="#menu" class="nav-link">Naše Menu</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg" style="background-image: url('assets/images/hero.png');"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title reveal-text">Autentická<br>Asijská Kuchyně</h1>
+                <p class="hero-subtitle reveal-text delay-1">Tradiční chutě, čerstvé suroviny a dokonalý gastronomický zážitek přímo v Novém Městě na Moravě.</p>
+                <div class="hero-actions reveal-text delay-2">
+                    <a href="#menu" class="btn btn-primary">Objevit Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Rezervace a Info</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <h2 class="section-title">Náš Příběh</h2>
+                        <h3 class="section-subtitle">Pravá chuť Vietnamu</h3>
+                        <p class="section-desc">V restauraci SAO VIỆT věříme, že každé jídlo by mělo být zážitkem. Naše pokrmy připravujeme podle tradičních rodinných receptur, s použitím čerstvých bylinek, vybraných mas a autentických asijských koření.</p>
+                        <p class="section-desc">Nezáleží na tom, zda máte chuť na lahodné sushi, čerstvé Poké, tradiční Phở nebo vyladěné asijské speciality. U nás si vybere každý rýžový gurmán i milovník pálivých woků.</p>
+                        <div class="features-list mt-8">
+                            <div class="feature-item">
+                                <div class="feature-icon">❖</div>
+                                <span>Denně čerstvé ryby a zelenina</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">❖</div>
+                                <span>Autentické domácí receptury</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">❖</div>
+                                <span>Příjemné rodinné prostředí</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image-wrapper fade-in delay-1">
+                        <div class="about-image-frame">
+                            <img src="assets/images/pho.png" alt="Tradiční vietnamské jídlo" class="about-img">
+                            <div class="about-image-badge">Hodnocení<br><strong>4.8 / 5</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Highlight Section -->
+        <section class="menu section-padding bg-darker" id="menu">
+            <div class="container">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="section-title text-center">Vybrané Speciality</h2>
+                    <h3 class="section-subtitle text-center">To nejlepší z asijské kuchyně</h3>
+                    <p class="section-desc text-center max-w-2xl mx-auto">Všechny naše pokrmy jsou připravovány na objednávku z prémiových surovin, aby byla zajištěna jejich maximální čerstvost a chuť.</p>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Menu Card 1 -->
+                    <div class="menu-card fade-in">
+                        <div class="menu-card-img-wrapper">
+                            <img src="assets/images/sushi.png" alt="Sushi Maki" class="menu-card-img">
+                            <div class="menu-card-tag">Naše chlouba</div>
+                        </div>
+                        <div class="menu-card-content">
+                            <h4 class="menu-card-title">Prémiové Sushi</h4>
+                            <p class="menu-card-desc">Od klasických Maki až po elegantní Sashimi a speciální rolky. Čerstvý losos (Sake), Tuňák (Maguro), a další delikatesy.</p>
+                            <span class="menu-card-price">od 89 Kč</span>
+                        </div>
+                    </div>
+
+                    <!-- Menu Card 2 -->
+                    <div class="menu-card fade-in delay-1">
+                        <div class="menu-card-img-wrapper">
+                            <img src="assets/images/poke.png" alt="Poke Bowl" class="menu-card-img">
+                        </div>
+                        <div class="menu-card-content">
+                            <h4 class="menu-card-title">Svěží Poké Bowls</h4>
+                            <p class="menu-card-desc">Barevná, zdravá miska plná ryb, rýže, čerstvé zeleniny, edamame a našich domácích omáček.</p>
+                            <span class="menu-card-price">od 229 Kč</span>
+                        </div>
+                    </div>
+
+                    <!-- Menu Card 3 -->
+                    <div class="menu-card fade-in delay-2">
+                        <div class="menu-card-img-wrapper">
+                            <img src="assets/images/pho.png" alt="Tradiční Pho" class="menu-card-img">
+                            <div class="menu-card-tag">Tradiční</div>
+                        </div>
+                        <div class="menu-card-content">
+                            <h4 class="menu-card-title">Vietnamské Speciality</h4>
+                            <p class="menu-card-desc">Silné vývary Phở k dostání s hovězím či kuřecím masem a čerstvými bylinkami, které Vám dodají energii.</p>
+                            <span class="menu-card-price">od 159 Kč</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 fade-in">
+                    <p class="menu-note">Kompletní menu je dostupné přímo v restauraci.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info / Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <div class="contact-info fade-in">
+                        <h2 class="section-title">Kontakt & Info</h2>
+                        <p class="contact-desc">Těšíme se na vaši návštěvu. Ať už si chcete vychutnat oběd u nás nebo si odnést večeři domů.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Kde nás najdete</span>
+                                <span class="contact-value">Bradyových 15/15<br>592 31 Nové Město na Moravě</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Telefon (Objednávky s sebou)</span>
+                                <a href="tel:+420703981038" class="contact-value link">+420 703 981 038</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-detail">
+                                <span class="contact-label">Otevírací Doba</span>
+                                <span class="contact-value">Pondělí - Neděle<br>10:00 - 22:00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-info mt-6 text-warning">
+                            <strong>Důležité info:</strong> Přijímáme POUZE HOTOVOST. K dispozici je pro hosty Wi-Fi.
+                        </div>
+                    </div>
+
+                    <div class="contact-map fade-in delay-1">
+                        <!-- Zde vkládáme iframe s Google mapami -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20666.866042459954!2d16.069418659424883!3d49.5606497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470d0d481da4fbbb%3A0xe549dc24ab74da6!2sSAO%20VI%E1%BB%86T!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">SAO VIỆT</span>
+                <p class="footer-copy">Premium Asian & Vietnamese Cuisine</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/p/Sao-Vi%E1%BB%87t-61566573961132/" target="_blank" class="social-link" aria-label="Facebook">
+                    FB Stránka
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SAO VIỆT Restaurant. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
