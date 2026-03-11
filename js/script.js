@@ -4,9 +4,20 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- 0. Preloader ---
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            // Malé zpoždění pro plynulejší přechod ("wow" efekt)
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+            }, 800);
+        }
+    });
+
     // --- 1. Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -41,16 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             // Pouze pokud mají href='#neco' a ukazuje to na element
-            if(this.getAttribute('href') !== '#') {
+            if (this.getAttribute('href') !== '#') {
                 e.preventDefault();
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-                
+
                 if (targetElement) {
                     // Offset pro fixní hlavičku (zhruba 80px)
-                    const yOffset = -80; 
+                    const yOffset = -80;
                     const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    
+
                     window.scrollTo({
                         top: y,
                         behavior: 'smooth'
@@ -68,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 return;
