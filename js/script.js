@@ -95,4 +95,60 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 
+    // --- 5. Menu Lightbox ---
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const totalImages = 14;
+    let currentImageIndex = 0;
+
+    window.openLightbox = function (index) {
+        currentImageIndex = index;
+        updateLightboxImage();
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Zabrání scrollování okolo modalu
+    };
+
+    window.closeLightbox = function () {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    window.changeLightboxImage = function (step) {
+        currentImageIndex += step;
+
+        // Zacyklení galerie
+        if (currentImageIndex >= totalImages) {
+            currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+            currentImageIndex = totalImages - 1;
+        }
+
+        updateLightboxImage();
+    };
+
+    function updateLightboxImage() {
+        const imageNumber = currentImageIndex + 1;
+        lightboxImg.src = `assets/images/menu/menu-page-${imageNumber}.jpg`;
+    }
+
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-content-wrapper')) {
+                closeLightbox();
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowRight') {
+                changeLightboxImage(1);
+            } else if (e.key === 'ArrowLeft') {
+                changeLightboxImage(-1);
+            }
+        });
+    }
+
 });

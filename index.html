@@ -26,18 +26,15 @@
     <!-- Preloader -->
     <div id="preloader" class="preloader">
         <div class="preloader-content">
-            <svg class="sushi-spinner" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-            </svg>
+            <img src="assets/images/logo.png" alt="Načítám..." class="logo-spinner">
         </div>
     </div>
 
     <!-- Navbar -->
     <header class="navbar" id="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">
+            <a href="#" class="nav-logo-link">
+                <img src="assets/images/logo.png" alt="SAO VIỆT Logo" class="nav-logo-img">
                 <span class="logo-text">SAO VIỆT</span>
             </a>
 
@@ -50,6 +47,7 @@
             <nav class="nav-links">
                 <a href="#about" class="nav-link">O Nás</a>
                 <a href="#menu" class="nav-link">Naše Menu</a>
+                <a href="#complete-menu" class="nav-link">Celé Menu</a>
                 <a href="#contact" class="nav-link">Kontakt</a>
             </nav>
         </div>
@@ -130,7 +128,7 @@
                             <h4 class="menu-card-title">Prémiové Sushi</h4>
                             <p class="menu-card-desc">Od klasických Maki až po elegantní Sashimi a speciální rolky.
                                 Čerstvý losos (Sake), Tuňák (Maguro), a další delikatesy.</p>
-                            <span class="menu-card-price">od 89 Kč</span>
+
                         </div>
                     </div>
 
@@ -140,10 +138,9 @@
                             <img src="assets/images/poke.png" alt="Poke Bowl" class="menu-card-img">
                         </div>
                         <div class="menu-card-content">
-                            <h4 class="menu-card-title">Svěží Poké Bowls</h4>
-                            <p class="menu-card-desc">Barevná, zdravá miska plná ryb, rýže, čerstvé zeleniny, edamame a
-                                našich domácích omáček.</p>
-                            <span class="menu-card-price">od 229 Kč</span>
+                            <h4 class="menu-card-title">Křupavá Kachna s Rýží</h4>
+                            <p class="menu-card-desc">Plátky dozlatova pečené kachny podávané s prémiovou jasmínovou
+                                rýží, pikantní tmavou švestkovou omáčkou a čerstvou zeleninou.</p>
                         </div>
                     </div>
 
@@ -154,10 +151,9 @@
                             <div class="menu-card-tag">Tradiční</div>
                         </div>
                         <div class="menu-card-content">
-                            <h4 class="menu-card-title">Vietnamské Speciality</h4>
-                            <p class="menu-card-desc">Silné vývary Phở k dostání s hovězím či kuřecím masem a čerstvými
-                                bylinkami, které Vám dodají energii.</p>
-                            <span class="menu-card-price">od 159 Kč</span>
+                            <h4 class="menu-card-title">Restované Nudle Udon</h4>
+                            <p class="menu-card-desc">Husté pšeničné japonské Udon nudle, restované na woku s křehkým
+                                hovězím masem, sezamem, zeleninkou a sojovou omáčkou.</p>
                         </div>
                     </div>
                 </div>
@@ -165,6 +161,58 @@
                 <div class="text-center mt-12 fade-in">
                     <p class="menu-note">Kompletní menu je dostupné přímo v restauraci.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Complete Menu Gallery -->
+        <section class="menu-gallery-section section-padding" id="complete-menu">
+            <div class="container">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="section-title text-center">Kompletní Menu</h2>
+                    <h3 class="section-subtitle text-center">Naše nabídka jídel a nápojů</h3>
+                </div>
+
+                <div class="menu-gallery-grid" id="gallery-container">
+                    <div class="gallery-item fade-in"><img src="assets/images/menu/menu-page-1.jpg" alt="Menu Strana 1"
+                            onclick="openLightbox(0)"></div>
+                    <div class="gallery-item fade-in delay-1"><img src="assets/images/menu/menu-page-2.jpg"
+                            alt="Menu Strana 2" onclick="openLightbox(1)"></div>
+                    <div class="gallery-item fade-in delay-2"><img src="assets/images/menu/menu-page-3.jpg"
+                            alt="Menu Strana 3" onclick="openLightbox(2)"></div>
+                    <div class="gallery-item fade-in"><img src="assets/images/menu/menu-page-4.jpg" alt="Menu Strana 4"
+                            onclick="openLightbox(3)"></div>
+                    <div class="gallery-item fade-in delay-1"><img src="assets/images/menu/menu-page-5.jpg"
+                            alt="Menu Strana 5" onclick="openLightbox(4)"></div>
+                    <div class="gallery-item fade-in delay-2"><img src="assets/images/menu/menu-page-6.jpg"
+                            alt="Menu Strana 6" onclick="openLightbox(5)"></div>
+                    <div class="gallery-item fade-in"><img src="assets/images/menu/menu-page-7.jpg" alt="Menu Strana 7"
+                            onclick="openLightbox(6)"></div>
+                    <div class="gallery-item fade-in delay-1"><img src="assets/images/menu/menu-page-8.jpg"
+                            alt="Menu Strana 8" onclick="openLightbox(7)"></div>
+                    <div class="gallery-item fade-in delay-2"><img src="assets/images/menu/menu-page-9.jpg"
+                            alt="Menu Strana 9" onclick="openLightbox(8)"></div>
+                    <div class="gallery-item fade-in"><img src="assets/images/menu/menu-page-10.jpg"
+                            alt="Menu Strana 10" onclick="openLightbox(9)"></div>
+                    <div class="gallery-item fade-in delay-1"><img src="assets/images/menu/menu-page-11.jpg"
+                            alt="Menu Strana 11" onclick="openLightbox(10)"></div>
+                    <div class="gallery-item fade-in delay-2"><img src="assets/images/menu/menu-page-12.jpg"
+                            alt="Menu Strana 12" onclick="openLightbox(11)"></div>
+                    <div class="gallery-item fade-in"><img src="assets/images/menu/menu-page-13.jpg"
+                            alt="Menu Strana 13" onclick="openLightbox(12)"></div>
+                    <div class="gallery-item fade-in delay-1"><img src="assets/images/menu/menu-page-14.jpg"
+                            alt="Menu Strana 14" onclick="openLightbox(13)"></div>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox-modal">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <button class="lightbox-prev" aria-label="Předchozí" onclick="changeLightboxImage(-1)">&#10094;</button>
+                <div class="lightbox-content-wrapper">
+                    <img class="lightbox-content" id="lightbox-img" src="assets/images/menu/menu-page-1.jpg"
+                        alt="Menu Full">
+                </div>
+                <button class="lightbox-next" aria-label="Další" onclick="changeLightboxImage(1)">&#10095;</button>
             </div>
         </section>
 
@@ -220,7 +268,8 @@
                             </div>
                             <div class="contact-detail">
                                 <span class="contact-label">Otevírací Doba</span>
-                                <span class="contact-value">Pondělí - Neděle<br>10:00 - 22:00</span>
+                                <span class="contact-value">Pondělí - Pátek<br>10:00 - 22:00</span>
+                                <span class="contact-value">Sobota - Neděle<br>11:00 - 22:00</span>
                             </div>
                         </div>
 
@@ -232,7 +281,7 @@
                     <div class="contact-map fade-in delay-1">
                         <!-- Zde vkládáme iframe s Google mapami -->
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20666.866042459954!2d16.069418659424883!3d49.5606497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470d0d481da4fbbb%3A0xe549dc24ab74da6!2sSAO%20VI%E1%BB%86T!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+                            src="https://maps.google.com/maps?q=SAO%20VI%E1%BB%86T,%20Bradyov%C3%BDch%2015/15,%20Nov%C3%A9%20M%C4%9Bsto%20na%20Morav%C4%9B&t=&z=17&ie=UTF8&iwloc=&output=embed"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -246,7 +295,10 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <span class="footer-logo">SAO VIỆT</span>
+                <div class="footer-logo-wrapper">
+                    <img src="assets/images/logo.png" alt="SAO VIỆT Logo" class="footer-logo-img">
+                    <span class="footer-logo">SAO VIỆT</span>
+                </div>
                 <p class="footer-copy">Premium Asian & Vietnamese Cuisine</p>
             </div>
 
@@ -261,7 +313,7 @@
             <p>&copy; 2026 SAO VIỆT Restaurant. Všechna práva vyhrazena.</p>
             <p style="margin-top: 0.5rem; opacity: 0.7;">
                 by <a href="mailto:lukes.david502@gmail.com"
-                    style="color: var(--color-primary); text-decoration: none;">Davidlukes</a>
+                    style="color: var(--color-primary); text-decoration: none;">David Lukeš</a>
             </p>
         </div>
     </footer>
